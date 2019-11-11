@@ -21,7 +21,11 @@ services:
     environment:
       - node.name=es01
       - discovery.seed_hosts=es02
+<<<<<<< HEAD
       #- cluster.initial_master_nodes=es01,es02
+=======
+      - cluster.initial_master_nodes=es01
+>>>>>>> 8b54c97b2443f574620daaaa679632a4698c07bf
       - cluster.name=fess-es
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
