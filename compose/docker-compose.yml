@@ -21,7 +21,7 @@ services:
     environment:
       - node.name=es01
       - discovery.seed_hosts=es02
-      - cluster.initial_master_nodes=es01,es02
+      - cluster.initial_master_nodes=es01
       - cluster.name=fess-es
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
@@ -57,7 +57,7 @@ services:
       - esdata02:/usr/share/elasticsearch/data
       - esdictionary02:/usr/share/elasticsearch/config/dictionary
     ports:
-      - 9201:9200
+      - 9200:9201
     networks:
       - esnet
 
