@@ -57,7 +57,7 @@ services:
       - esdata02:/usr/share/elasticsearch/data
       - esdictionary02:/usr/share/elasticsearch/config/dictionary
     ports:
-      - 9201:9200
+      - 9200:9201
     networks:
       - esnet
 
